@@ -28,7 +28,7 @@
 }
 
 .contenedor-presentacion h1,
-.contenedor-presentacion button {
+.contenedor-presentacion a {
   position: relative;
   z-index: 2;
 }
@@ -40,7 +40,8 @@
   color: #ffffff;
 }
 
-.contenedor-presentacion button {
+.contenedor-presentacion a {
+  text-decoration: none;
   background-color: #21A495;
   color: #ffffff;
   padding: 12px 25px;
@@ -52,7 +53,7 @@
   font-weight: 500;
 }
 
-.contenedor-presentacion button:hover {
+.contenedor-presentacion a:hover {
   background-color: #1d887b;
   transform: scale(1.05);
 }
