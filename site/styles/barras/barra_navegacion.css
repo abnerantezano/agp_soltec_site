@@ -1,0 +1,36 @@
+.barra-navegacion {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 10%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  backdrop-filter: blur(10px);
+}
+
+.barra-navegacion .logo img {
+  width: 150px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.barra-navegacion .enlaces {
+  display: flex;
+  gap: 30px;
+}
+
+.barra-navegacion .enlaces a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.barra-navegacion .enlaces a:hover {
+  color: #1d887b;
+}

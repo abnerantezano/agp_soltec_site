@@ -1,0 +1,88 @@
+footer {
+  background-color: #e6e5e5;
+  color: #1a1a1a;
+  padding: 40px 10% 20px 10%;
+}
+
+.contenedor-contacto {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center; 
+}
+
+.contenedor-contacto h1 {
+  font-size: 2em;
+  color: #21A495;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+footer hr {
+  border: none; 
+  height: 1px; 
+  background-color: #d1d1d1; 
+}
+
+.grid-contactenos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 40px;
+  justify-content: center; 
+  align-items: center;     
+}
+
+footer .copyright {
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contenedor-contacto .contacto-info {
+  display:grid;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+
+.contenedor-contacto .contacto-info span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1em;
+  color: #1a1a1a;
+}
+
+.contenedor-contacto .contacto-info .contacto-info-item {
+  display: flex; 
+  align-items: center; 
+  gap: 20px;
+  padding: 10px;
+}
+
+
+.contenedor-contacto .contacto-info .contacto-info-item svg {
+  width: 40px;
+  height: 40px;
+  fill: #1d887b;
+  align-items: center;
+}
+
+.contenedor-contacto .contacto-info .contacto-info-item p {
+  font-size: 0.9em;
+  margin: 0;
+  font-weight: bold;
+}
+
+.contenedor-contacto .contacto-info .contacto-info-item a {
+  text-decoration: none; 
+  color: #1d887b; 
+  font-weight: bold; 
+}
+
+.contenedor-contacto .contacto-info .contacto-info-item a:hover {
+  color: #155e5c; 
+}
+

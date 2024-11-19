@@ -1,37 +1,258 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>NGINX on Railway</title>
-    <meta name="description" content="Choo Choo!" />
-
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link rel="stylesheet" href="/styles.css?v=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./images/logo-resize.png" sizes="9x9" />
+    <title>AGP Soltec</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./styles/barras/barra_navegacion.css" />
+    <link rel="stylesheet" href="./styles/barras/barra_scroll.css" />
+    <link rel="stylesheet" href="./styles/presentacion.css" />
+    <link rel="stylesheet" href="./styles/nosotros.css" />
+    <link rel="stylesheet" href="./styles/servicios.css" />
+    <link rel="stylesheet" href="./styles/contactos.css" />
+    <link rel="stylesheet" href="./styles/animaciones.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
-
   <body>
-    <main>
-      <img
-        src="https://railway.app/brand/logo-light.svg"
-        alt="Railway logo"
-        class="logo"
-      />
+    <!-- Barra de navegación -->
+    <nav class="barra-navegacion">
+      <div class="logo">
+        <a href="/"><img src="images/logo.png" alt="Logo AGP Soltec" class="item-logo" /></a>
+      </div>
+      <div class="enlaces">
+        <a href="#">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
 
-      <h1>NGINX on Railway</h1>
+    <!-- Presentación -->
+    <section class="contenedor-presentacion">
+      <h1>Soluciones TI & Geoespaciales</h1>
+      <button>Explora nuestros servicios</button>
+    </section>
 
-      <p>
-        Choo Choo! This is an example of an NGINX static site running on
-        Railway.
-        <a
-          href="https://github.com/railwayapp/starters/tree/master/examples/nginx"
-          >View source</a
-        >.
-      </p>
-    </main>
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="contenedor-nosotros">
+      <div class="nosotros-contenido">
+        <div class="nosotros-texto">
+          <h1 class="titulo-contenido">Acerca de nosotros</h1>
+          <p>
+            Somos una empresa con sólida experiencia en minería y energía, en
+            constante actualización para adaptarnos a las nuevas tecnologías,
+            ofreciendo soluciones efectivas y de calidad a nuestros clientes.
+          </p>
+        </div>
+        <div class="nosotros-imagen">
+          <img
+            src="./images/nosotros.jpg"
+            alt="Imagen representativa de nosotros"
+          />
+        </div>
+      </div>
+      <div class="nosotros-contenido bg-inv">
+        <div class="nosotros-imagen">
+          <img
+            src="./images/soluciones_ti.jpg"
+            alt="Imagen de soluciones de TI"
+          />
+        </div>
+        <div class="nosotros-texto-inv">
+          <h1 class="titulo-contenido">Soluciones de TI</h1>
+          <p>
+            Dominamos tecnologías de información aplicadas a soluciones de
+            software y hardware. Brindamos servicios especializados que permiten
+            a nuestros clientes alcanzar el éxito en cada proyecto.
+          </p>
+        </div>
+        
+      </div>
+      <div class="nosotros-contenido">
+        <div class="nosotros-texto">
+          <h1 class="titulo-contenido">Soluciones geoespaciales</h1>
+          <p>
+            Usamos herramientas GIS, CAD y bases de datos para ayudar a nuestros
+            clientes a visualizar, analizar y tomar decisiones informadas,
+            minimizando riesgos y maximizando el éxito de sus proyectos.
+          </p>
+        </div>
+        <div class="nosotros-imagen">
+          <img
+            src="./images/soluciones_geoespaciales.jpg"
+            alt="Imagen de soluciones geoespaciales"
+          />
+        </div>
+      </div>
+      
+    </section>
+    <!-- Sección Servicios -->
+    <section id="servicios" class="contenedor-servicios">
+      <h1>Nuestros servicios</h1>
+      <div class="grid-servicios"  data-aos="fade-up">
+        <div class="servicio">
+          <div class="servicio-imagen">
+            <img
+              src="https://www.epitech-it.es/wp-content/uploads/2022/07/programas-bases-de-datos.jpg"
+              alt="Servicio de Base de datos"
+            />
+          </div>
+          <div class="servicio-contenido">
+            <h2>Base de datos</h2>
+            <div class="caracteristicas">
+              <div>
+                <i class="fas fa-database"></i> Modelado y gestión de bases de
+                datos
+              </div>
+              <div><i class="fas fa-tools"></i> Uso de herramientas ETL</div>
+              <div>
+                <i class="fas fa-stethoscope"></i> Diagnóstico y mantenimiento
+              </div>
+              <div><i class="fas fa-code"></i> Creación de scripts</div>
+            </div>
+          </div>
+        </div>
 
-    <script src="/script.js"></script>
+        <div class="servicio">
+          <div class="servicio-imagen">
+            <img
+              src="https://ovacen.com/wp-content/uploads/2016/04/mapas-interactivos.jpg"
+              alt="Servicio de Mapas y Planos"
+            />
+          </div>
+          <div class="servicio-contenido">
+            <h2>Elaboración de mapas y planos</h2>
+            <div class="caracteristicas">
+              <div>
+                <i class="fas fa-map-marked-alt"></i> Generación con software
+                GIS y CAD
+              </div>
+              <div>
+                <i class="fas fa-layer-group"></i> Integración y visualización
+                de datos
+              </div>
+              <div>
+                <i class="fas fa-drafting-compass"></i> Digitalización de mapas
+                y planos
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="servicio">
+          <div class="servicio-imagen">
+            <img
+              src="https://blog.comparasoftware.com/wp-content/uploads/2020/07/Soporte-Tecnico-presencial-1.png"
+              alt="Servicio de Soporte Técnico"
+            />
+          </div>
+          <div class="servicio-contenido">
+            <h2>Soporte técnico</h2>
+            <div class="caracteristicas">
+              <div>
+                <i class="fas fa-laptop-medical"></i> Hardware y software
+              </div>
+              <div><i class="fas fa-wrench"></i> Diagnóstico y reparación</div>
+              <div><i class="fas fa-users"></i> Asesoría informática</div>
+              <div><i class="fas fa-bullhorn"></i> Marketing digital</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="servicio">
+          <div class="servicio-imagen">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGZMb3a2UCCva3Jjz09_Tav5LldwZ9hb2SMQ&s"
+              alt="Servicio de Desarrollo de Aplicaciones"
+            />
+          </div>
+          <div class="servicio-contenido">
+            <h2>Desarrollo de aplicaciones</h2>
+            <div class="caracteristicas">
+              <div><i class="fas fa-cogs" style="color: #1d887b;"></i> Aplicaciones a medida</div>
+              <div><i class="fas fa-robot"></i> Automatización de procesos</div>
+              <div>
+                <i class="fas fa-mobile-alt"></i> Aplicaciones web y móviles
+              </div>
+              <div>
+                <i class="fas fa-users-cog"></i> Experiencia del usuario
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (Contáctenos) -->
+    <footer id="contacto">
+      <div class="contenedor-contacto">
+        <h1>Contáctenos</h1>
+        <div class="grid-contactenos">
+          <div class="contacto-info">
+            <div class="contacto-info-item">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/></svg>
+              </div>
+              <div>
+                <p>Correo electrónico</p>
+                <a href="">agranados@agpsoltec.com</a>
+              </div>
+            </div>
+            <div class="contacto-info-item">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                </svg>
+              </div>
+              <div>
+                <p>Número de teléfono</p>
+                <a href="">+51 982 167 109</a>
+              </div>
+            </div>
+          </div>
+            <div class="contacto-info">
+              <div class="contacto-info-item">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p>LinkedIn</p>
+                  <a href=""><i class=""></i>@usuario</a>
+                </div>
+              </div>
+              <div class="contacto-info-item">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p>Youtube</p>
+                  <a href=""><i class=""></i>@usuario</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <hr>
+      <div class="copyright">
+        © Todos los derechos resevados. AGP SOLTEC 2024.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
