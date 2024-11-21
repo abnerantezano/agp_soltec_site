@@ -6,14 +6,14 @@ footer {
 
 .contenedor-contacto {
   display: flex;
-  flex-direction: column; 
-  align-items: center;    
-  justify-content: center; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contenedor-contacto h1 {
   font-size: 2em;
-  color: #21A495;
+  color: #21a495;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -21,17 +21,16 @@ footer {
 }
 
 footer hr {
-  border: none; 
-  height: 1px; 
-  background-color: #d1d1d1; 
+  border: none;
+  height: 1px;
+  background-color: #d1d1d1;
 }
 
 .grid-contactenos {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 40px;
-  justify-content: center; 
-  align-items: center;     
+  justify-content: center;
 }
 
 footer .copyright {
@@ -41,7 +40,7 @@ footer .copyright {
 }
 
 .contenedor-contacto .contacto-info {
-  display:grid;
+  display: grid;
   justify-content: center;
   align-items: start;
   gap: 30px;
@@ -56,12 +55,11 @@ footer .copyright {
 }
 
 .contenedor-contacto .contacto-info .contacto-info-item {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   gap: 20px;
   padding: 10px;
 }
-
 
 .contenedor-contacto .contacto-info .contacto-info-item svg {
   width: 40px;
@@ -77,12 +75,11 @@ footer .copyright {
 }
 
 .contenedor-contacto .contacto-info .contacto-info-item a {
-  text-decoration: none; 
-  color: #1d887b; 
-  font-weight: bold; 
+  text-decoration: none;
+  color: #1d887b;
+  font-weight: bold;
 }
 
 .contenedor-contacto .contacto-info .contacto-info-item a:hover {
-  color: #155e5c; 
+  color: #155e5c;
 }
-

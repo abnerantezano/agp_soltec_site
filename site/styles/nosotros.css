@@ -16,7 +16,7 @@
   font-size: 2.8em;
   margin-bottom: 15px;
   font-weight: bold;
-  color: #1d887b
+  color: #1d887b;
 }
 
 .acerca-de-nosotros p {
@@ -49,13 +49,14 @@
 }
 
 .carta-contenido {
-  padding: 20px;
+  padding: 15px;
+  text-align: center;
 }
 
 .carta-contenido h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
-  color: #1d887b
+  color: #3c3c3c;
 }
 
 .carta-contenido p {
