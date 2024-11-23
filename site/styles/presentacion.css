@@ -1,3 +1,4 @@
+/* Estilo base */
 .contenedor-presentacion {
   text-align: center;
   padding: 60px 15px;
@@ -56,4 +57,94 @@
 .contenedor-presentacion a:hover {
   background-color: #1d887b;
   transform: scale(1.05);
+}
+
+
+@media (max-width: 1536px) {
+  .contenedor-presentacion h1 {
+    font-size: 3.2em;
+  }
+
+  .contenedor-presentacion a {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .contenedor-presentacion h1 {
+    font-size: 3em;
+  }
+
+  .contenedor-presentacion a {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contenedor-presentacion {
+    padding: 50px 10px;
+    height: 75vh;
+  }
+
+  .contenedor-presentacion h1 {
+    font-size: 2.8em;
+  }
+
+  .contenedor-presentacion a {
+    font-size: 0.95em;
+    padding: 8px 18px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contenedor-presentacion {
+    padding: 40px 10px;
+    height: 70vh;
+  }
+
+  .contenedor-presentacion h1 {
+    font-size: 2.5em;
+  }
+
+  .contenedor-presentacion a {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .contenedor-presentacion {
+    padding: 30px 10px;
+    height: 65vh;
+  }
+
+  .contenedor-presentacion h1 {
+    font-size: 2.2em;
+  }
+
+  .contenedor-presentacion a {
+    font-size: 0.85em;
+    padding: 6px 14px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .contenedor-presentacion {
+    padding: 20px 10px;
+    height: 60vh;
+  }
+
+  .contenedor-presentacion h1 {
+    font-size: 2em;
+  }
+
+  .contenedor-presentacion a {
+    font-size: 0.8em;
+    padding: 5px 12px;
+  }
 }

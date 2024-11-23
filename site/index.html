@@ -30,15 +30,36 @@
     <!-- Barra de navegación -->
     <nav class="barra-navegacion">
       <div class="logo">
-        <a href="/"
-          ><img src="images/logo.png" alt="Logo AGP Soltec" class="item-logo"
-        /></a>
+        <img src="./images/logo.png" alt="Logo">
       </div>
       <div class="enlaces">
         <a href="#">Inicio</a>
         <a href="#nosotros">Nosotros</a>
         <a href="#servicios">Servicios</a>
         <a href="#contacto">Contacto</a>
+      </div>
+      <button class="menu-boton" aria-label="Abrir menú">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 30 30">
+          <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"></path>
+        </svg>
+      </button>
+    
+      <!-- Menú deslizable -->
+      <div class="menu-deslizable">
+        <div class="contenedor-boton">
+          <button class="cerrar-menu" aria-label="Cerrar menú">
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 256 256" height="30" viewBox="0 0 256 256" width="30" xml:space="preserve">
+              <path d="M179.199,38.399c0,1.637-0.625,3.274-1.875,4.524l-85.076,85.075l85.076,85.075c2.5,2.5,2.5,6.55,0,9.05s-6.55,2.5-9.05,0  l-89.601-89.6c-2.5-2.5-2.5-6.551,0-9.051l89.601-89.6c2.5-2.5,6.55-2.5,9.05,0C178.574,35.124,179.199,36.762,179.199,38.399z"/>
+            </svg>
+          </button>
+          <h1>AGP SOLTEC</h1>
+        </div>
+        <div class="enlaces-menu-deslizable">
+          <a href="#">Inicio</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#contacto">Contacto</a>
+        </div>
       </div>
     </nav>
 
@@ -113,15 +134,19 @@
           <div class="servicio-contenido">
             <h2>Base de datos</h2>
             <div class="caracteristicas">
-              <div>
+              <div class="caracteristica">
                 <i class="fas fa-database"></i> Modelado y gestión de bases de
                 datos
               </div>
-              <div><i class="fas fa-tools"></i> Uso de herramientas ETL</div>
-              <div>
-                <i class="fas fa-stethoscope"></i> Diagnóstico y mantenimiento
+              <div class="caracteristica">
+                <i class="fas fa-tools"></i> Uso de herramientas ETL
               </div>
-              <div><i class="fas fa-code"></i> Creación de scripts</div>
+              <div class="caracteristica">
+                <i class="fas fa-stethoscope"></i> Diagnóstico y mantenimiento
+              </div class="caracteristica">
+              <div class="caracteristica">
+                <i class="fas fa-code"></i> Creación de scripts
+              </div>
             </div>
           </div>
         </div>
@@ -136,15 +161,15 @@
           <div class="servicio-contenido">
             <h2>Elaboración de mapas y planos</h2>
             <div class="caracteristicas">
-              <div>
+              <div class="caracteristica">
                 <i class="fas fa-map-marked-alt"></i> Generación con software
                 GIS y CAD
               </div>
-              <div>
+              <div class="caracteristica">
                 <i class="fas fa-layer-group"></i> Integración y visualización
                 de datos
               </div>
-              <div>
+              <div class="caracteristica">
                 <i class="fas fa-drafting-compass"></i> Digitalización de mapas
                 y planos
               </div>
@@ -162,12 +187,18 @@
           <div class="servicio-contenido">
             <h2>Soporte técnico</h2>
             <div class="caracteristicas">
-              <div>
+              <div class="caracteristica">
                 <i class="fas fa-laptop-medical"></i> Hardware y software
               </div>
-              <div><i class="fas fa-wrench"></i> Diagnóstico y reparación</div>
-              <div><i class="fas fa-users"></i> Asesoría informática</div>
-              <div><i class="fas fa-bullhorn"></i> Marketing digital</div>
+              <div class="caracteristica">
+                <i class="fas fa-wrench"></i> Diagnóstico y reparación
+              </div>
+              <div class="caracteristica">
+                <i class="fas fa-users"></i> Asesoría informática
+              </div>
+              <div class="caracteristica">
+                <i class="fas fa-bullhorn"></i> Marketing digital
+              </div>
             </div>
           </div>
         </div>
@@ -182,15 +213,17 @@
           <div class="servicio-contenido">
             <h2>Desarrollo de aplicaciones</h2>
             <div class="caracteristicas">
-              <div>
-                <i class="fas fa-cogs" style="color: #1d887b"></i> Aplicaciones
+              <div class="caracteristica">
+                <i class="fas fa-cogs"></i> Aplicaciones
                 a medida
               </div>
-              <div><i class="fas fa-robot"></i> Automatización de procesos</div>
-              <div>
+              <div class="caracteristica">
+                <i class="fas fa-robot"></i> Automatización de procesos
+              </div>
+              <div class="caracteristica">
                 <i class="fas fa-mobile-alt"></i> Aplicaciones web y móviles
               </div>
-              <div>
+              <div class="caracteristica">
                 <i class="fas fa-users-cog"></i> Experiencia del usuario
               </div>
             </div>
@@ -264,7 +297,7 @@
               </div>
               <div>
                 <p>Youtube</p>
-                <a href="">@usuario</a>
+                <a href="https://www.youtube.com/@AGPSoltec">@AGPSoltec</a>
               </div>
             </div>
           </div>
@@ -283,8 +316,8 @@
                 ></path>
               </svg>
               <div>
-                <p>@Instagram</p>
-                <a href="https://www.instagram.com/agpsoltec/">agpsoltec</a>
+                <p>Instagram</p>
+                <a href="https://www.instagram.com/agpsoltec/">@agpsoltec</a>
               </div>
             </div>
           </div>
@@ -297,6 +330,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./scripts/menu.js"></script>
     <script>
       AOS.init();
     </script>
