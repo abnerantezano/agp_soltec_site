@@ -1,23 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const menuBoton = document.querySelector(".menu-boton");
-    const menuDeslizable = document.querySelector(".menu-deslizable");
-    const cerrarMenu = document.querySelector(".cerrar-menu");
-    const enlaces = document.querySelectorAll(".menu-deslizable a");
+  const menuBoton = document.querySelector(".menu-boton");
+  const menuDeslizable = document.querySelector(".menu-deslizable");
+  const cerrarMenu = document.querySelector(".cerrar-menu");
+  const enlaces = document.querySelectorAll(".menu-deslizable a");
+  const idiomaBoton = document.querySelectorAll(".idioma-boton")[1];
+  // Mostrar el menú al presionar el botón
+  menuBoton.addEventListener("click", () => {
+    menuDeslizable.classList.add("active");
+  });
 
-    // Mostrar el menú al presionar el botón
-    menuBoton.addEventListener("click", () => {
-        menuDeslizable.classList.add("active");
-    });
+  // Ocultar el menú al presionar el botón de cierre
+  cerrarMenu.addEventListener("click", () => {
+    menuDeslizable.classList.remove("active");
+  });
 
-    // Ocultar el menú al presionar el botón de cierre
-    cerrarMenu.addEventListener("click", () => {
-        menuDeslizable.classList.remove("active");
+  // Ocultar el menú al seleccionar un enlace
+  enlaces.forEach((enlace) => {
+    enlace.addEventListener("click", () => {
+      menuDeslizable.classList.remove("active");
     });
-
-    // Ocultar el menú al seleccionar un enlace
-    enlaces.forEach((enlace) => {
-        enlace.addEventListener("click", () => {
-            menuDeslizable.classList.remove("active");
-        });
-    });
+  });
+  idiomaBoton.addEventListener("click", () => {
+    cambiarIdioma();
+    menuDeslizable.classList.remove("active");
+  });
 });

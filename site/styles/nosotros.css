@@ -1,176 +1,140 @@
-.acerca-de-nosotros {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Estilo general */
+.contenedor-nosotros {
+  padding: 60px 20px;
   text-align: center;
-  padding: 20px;
-  padding-top: 90px;
-  color: black;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Sección "Acerca de Nosotros" */
+.acerca-de-nosotros {
+  margin-bottom: 40px;
 }
 
 .contenido-central {
-  width: 50%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.acerca-de-nosotros h1 {
-  font-size: 2.8em;
-  margin-bottom: 15px;
-  font-weight: bold;
+.contenido-central h1 {
+  font-size: 2.5rem;
   color: #1d887b;
+  margin-bottom: 15px;
 }
 
-.acerca-de-nosotros p {
-  font-size: 1.2em;
+.contenido-central p {
+  font-size: 1.2rem;
   line-height: 1.8;
+  color: #444;
 }
 
+/* Estilo para las cartas */
 .cartas {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-wrap: wrap;
   gap: 20px;
-  padding: 40px 10%;
-  height: auto; 
-  flex-wrap: wrap; 
+  justify-content: center;
 }
 
 .carta {
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: calc(50% - 20px); 
-  height: 100%;
-  text-align: left;
+  max-width: 300px;
+  flex: 1 1 calc(50% - 20px);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.carta-imagen img {
+.carta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carta-imagen {
   width: 100%;
-  height: 300px;
+  height: 200px;
   object-fit: cover;
 }
 
 .carta-contenido {
-  padding: 15px;
-  text-align: center;
+  padding: 20px;
 }
 
 .carta-contenido h2 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
+  color: #333;
   margin-bottom: 10px;
-  color: #3c3c3c;
 }
 
 .carta-contenido p {
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.6;
-  color: black;
+  color: #2b2b2b;
 }
 
-@media (max-width: 1536px) {
-  .cartas {
-    padding: 40px 10%; 
-  }
-
+@media (min-width: 1024px) {
   .carta {
-    width: calc(33.33% - 20px); 
+    max-width: 400px;
   }
 
-  .carta-imagen img {
-    height: 350px; 
-  }
-}
-
-@media (max-width: 1280px) {
-  .cartas {
-    padding: 30px 5%;
-    gap: 15px;
-  }
-
-  .carta {
-    width: calc(33.33% - 15px); 
-  }
-
-  .carta-imagen img {
-    height: 300px;
+  .carta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   }
 }
 
+/* Media Queries para Responsividad */
 @media (max-width: 1024px) {
-  .cartas {
-    padding: 20px 5%; 
+  .contenido-central h1 {
+    font-size: 2.2rem;
+  }
+
+  .contenido-central p {
+    font-size: 1rem;
   }
 
   .carta {
-    width: calc(100% - 20px);
-    margin-bottom: 20px; 
+    flex: 1 2 100%;
   }
 }
 
 @media (max-width: 768px) {
-  .acerca-de-nosotros h1 {
-    font-size: 2.2em;
+  .contenido-central h1 {
+    font-size: 2rem;
   }
 
-  .acerca-de-nosotros p {
-    font-size: 1em; 
-  }
-
-  .cartas {
-    gap: 15px; 
-  }
-
-  .carta-imagen img {
-    height: 200px; 
-  }
-
-  .carta-contenido p {
+  .contenido-central p {
     font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .cartas {
-    flex-direction: column; 
-    padding: 10px;
-    gap: 10px;
   }
 
   .carta {
-    width: 100%; 
-    height: auto; 
+    margin-bottom: 20px;
   }
 
-  .carta-imagen img {
-    height: 200px; 
-  }
-
-  .carta-contenido p {
-    font-size: 0.9rem;
+  .carta-imagen {
+    height: 180px;
   }
 }
 
 @media (max-width: 480px) {
   .contenido-central {
-    width: 90%; 
+    padding: 0 10px;
   }
 
-  .acerca-de-nosotros h1 {
-    font-size: 1.8em;
+  .contenido-central h1 {
+    font-size: 1.8rem;
   }
 
-  .acerca-de-nosotros p {
-    font-size: 0.9em;
+  .contenido-central p {
+    font-size: 0.8rem;
   }
 
-  .carta {
-    width: 100%;
-  }
-
-  .carta-imagen img {
-    height: 180px; 
+  .carta-imagen {
+    height: 150px;
   }
 
   .carta-contenido p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
