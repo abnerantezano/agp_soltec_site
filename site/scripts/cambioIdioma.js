@@ -1,5 +1,5 @@
 const textosTraducidos = {
-  inicio: {
+  inicioTexto: {
     es: "Inicio",
     en: "Home",
   },
@@ -7,7 +7,7 @@ const textosTraducidos = {
     es: "Inicio",
     en: "Home",
   },
-  nosotros: {
+  nosotrosTexto: {
     es: "Nosotros",
     en: "About us",
   },
@@ -15,7 +15,7 @@ const textosTraducidos = {
     es: "Nosotros",
     en: "About us",
   },
-  servicios: {
+  serviciosTexto: {
     es: "Servicios",
     en: "Services",
   },
@@ -23,7 +23,7 @@ const textosTraducidos = {
     es: "Servicios",
     en: "Services",
   },
-  contacto: {
+  contactoTexto: {
     es: "Contacto",
     en: "Contact",
   },
